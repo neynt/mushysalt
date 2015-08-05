@@ -2,16 +2,15 @@
 
 # Declare images below this line, using the image statement.
 # eg. image eileen happy = "eileen_happy.png"
+image bg bedroom = "images/bedroom.png"
 
 # Declare characters used by this game.
-define e = Character('Eileen', color="#c8ffc8")
-
+define u = Character('You', color="#888888")
 
 # The game starts here.
 label start:
-
-    e "You've created a new Ren'Py game."
-
-    e "Once you add a story, pictures, and music, you can release it to the world!"
-
+    scene bg bedroom
+    "I wake up."
+    "I brush my teeth."
+    "Today is a new day."
     return

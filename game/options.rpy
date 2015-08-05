@@ -17,8 +17,8 @@ init -1 python hide:
 
     ## These control the width and height of the screen.
 
-    config.screen_width = 800
-    config.screen_height = 600
+    config.screen_width = 1024
+    config.screen_height = 768
 
     ## This controls the title of the window, when Ren'Py is
     ## running in a window.
@@ -39,44 +39,44 @@ init -1 python hide:
     ## The theme function takes a number of parameters that can
     ## customize the color scheme.
 
-    theme.diamond(
-        ## Theme: Diamond
-        ## Color scheme: Phone Operator
+    theme.roundrect(
+        ## Theme: Roundrect
+        ## Color scheme: Ice Queen
 
         ## The color of an idle widget face.
-        widget = "#59667a",
+        widget = "#D9D9D9",
 
         ## The color of a focused widget face.
-        widget_hover = "#343e4d",
+        widget_hover = "#F0F2F2",
 
         ## The color of the text in a widget.
         widget_text = "#ffffff",
 
         ## The color of the text in a selected widget. (For
         ## example, the current value of a preference.)
-        widget_selected = "#bed4f6",
+        widget_selected = "#737373",
 
         ## The color of a disabled widget face.
-        disabled = "#929292",
+        disabled = "#F0F2F2",
 
         ## The color of disabled widget text.
-        disabled_text = "#ababab",
+        disabled_text = "#FBFBFB",
 
         ## The color of informational labels.
-        label = "#343e4d",
+        label = "#D9D9D9",
 
         ## The color of a frame containing widgets.
-        frame = "#d2d2d2",
+        frame = "#ffffff",
 
         ## The background of the main menu. This can be a color
         ## beginning with '#', or an image filename. The latter
         ## should take up the full height and width of the screen.
-        mm_root = "#59667a",
+        mm_root = "images/title.png",
 
         ## The background of the game menu. This can be a color
         ## beginning with '#', or an image filename. The latter
         ## should take up the full height and width of the screen.
-        gm_root = "#59667a",
+        gm_root = "#E6E6E6",
 
         ## If this is True, the in-game window is rounded. If False,
         ## the in-game window is square.
@@ -101,18 +101,18 @@ init -1 python hide:
     ## Margin is space surrounding the window, where the background
     ## is not drawn.
 
-    # style.window.left_margin = 6
-    # style.window.right_margin = 6
-    # style.window.top_margin = 6
-    # style.window.bottom_margin = 6
+    style.window.left_margin = 8
+    style.window.right_margin = 8
+    style.window.top_margin = 8
+    style.window.bottom_margin = 8
 
     ## Padding is space inside the window, where the background is
     ## drawn.
 
-    # style.window.left_padding = 6
-    # style.window.right_padding = 6
-    # style.window.top_padding = 6
-    # style.window.bottom_padding = 6
+    style.window.left_padding = 16
+    style.window.right_padding = 16
+    style.window.top_padding = 16
+    style.window.bottom_padding = 16
 
     ## This is the minimum height of the window, including the margins
     ## and padding.
@@ -278,7 +278,7 @@ init -1 python hide:
 
     ## The default text speed in characters per second. 0 is infinite.
 
-    config.default_text_cps = 0
+    config.default_text_cps = 50
 
     ## The default auto-forward time setting.
 
