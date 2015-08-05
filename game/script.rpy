@@ -10,6 +10,7 @@ define u = Character('You', color="#888888")
 # The game starts here.
 label start:
     scene bg bedroom
+    with dissolve
     "I wake up."
     "I brush my teeth."
     "Today is a new day."
